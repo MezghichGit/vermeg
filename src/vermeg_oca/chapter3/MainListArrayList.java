@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import vermeg_oca.chapter4.Personne;
+
 public class MainListArrayList {
 
 	public static void main(String[] args) {
@@ -41,6 +43,8 @@ public class MainListArrayList {
 			System.out.println(temp.toUpperCase());
 		}*/
 
+		Personne p = new Personne();
+		
 	}
 
 }

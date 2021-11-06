@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 public class DateTimeMain {
 
@@ -39,7 +41,21 @@ public class DateTimeMain {
 		System.out.println(dateTime);*/
 		// 3-Formatting
 		LocalDate date = LocalDate.of(2020, Month.JANUARY, 20);
-
+		//date.getDayOfWeek();
+		//System.out.println(date.getDayOfWeek());
+		//System.out.println(date); 
+		//DateTimeFormatter fs = DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
+		//DateTimeFormatter fm = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM);
+		//System.out.println(date.format(fs)); 
+		//System.out.println(date.format(fm)); 
+		DateTimeFormatter f = DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
+		
+		LocalDate date2 = LocalDate.of(2020, Month.JANUARY, 20);
+		LocalTime time = LocalTime.of(5, 15);
+		LocalDateTime dateTime = LocalDateTime.of(date2, time); 
+		System.out.println(dateTime);
+		System.out.println(f.format(dateTime));
+		System.out.println(dateTime.format(f));
 	}
 
 }
