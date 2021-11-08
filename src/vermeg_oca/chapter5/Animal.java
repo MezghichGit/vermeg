@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Animal {
-
+/*
 	private final List<String> foods;
 	
 	public Animal(List<String> val) {
@@ -27,6 +27,6 @@ public class Animal {
 		f2.clear();
 		System.out.println(a.getFoods());
 
-	}
+	}*/
 
 }
